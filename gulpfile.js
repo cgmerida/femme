@@ -24,13 +24,12 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./css'));
 });
 
+
 gulp.task('sass:watch', function () {
-    gulp.watch('./sass/**/**/*', ['sass']);
-    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch('./css/*.scss', ['sass']);
 });
 
-// Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function () {
+gulp.task('browser-sync', function () {
     var files = [
         './*.html',
         './css/*.css',
@@ -46,40 +45,40 @@ gulp.task('serve', ['sass'], function () {
 });
 
 // Default task
-gulp.task('default', ['serve'], function () {
+gulp.task('default', ['browser-sync'], function () {
     gulp.start('sass:watch');
 });
 
-gulp.task('clean', function () {
+gulp.task('clean', function() {
     return del(['dist']);
 });
 
-gulp.task('copyfonts', function () {
+gulp.task('copyfonts', function() {
     gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
-        .pipe(gulp.dest('./dist/fonts'));
+    .pipe(gulp.dest('./dist/fonts'));
 });
 
-gulp.task('imagemin', function () {
+gulp.task('imagemin', function() {
     return gulp.src('img/*.{png,jpg,gif}')
-        .pipe(imagemin({ iptimizationLevel: 3, progressive: true, interlaced: true }))
-        .pipe(gulp.dest('dist/img'));
+    .pipe(imagemin({iptimizationLevel: 3, progressive: true, interlaced: true}))
+    .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('usemin', function () {
+gulp.task('usemin', function() {
     return gulp.src('./*.html')
-        .pipe(flatmap(function (stream, file) {
-            return stream
-                .pipe(usemin({
-                    css: [rev()],
-                    html: [function () {
-                        return htmlmin({ collapseWhitespace: true })
-                    }],
-                    js: [uglify(), rev()],
-                    inlinejs: [uglify()],
-                    inlinecss: [cleanCss(), 'concat']
-                }))
+    .pipe(flatmap(function(stream, file) {
+        return stream
+        .pipe(usemin({
+            css: [rev()],
+            html: [function () {
+                return htmlmin({collapseWhitespace: true})
+            }],
+            js: [uglify(), rev()],
+            inlinejs: [uglify()],
+            inlinecss: [cleanCss(), 'concat']
         }))
-        .pipe(gulp.dest('dist/'))
+    }))
+    .pipe(gulp.dest('dist/'))
 });
 
 gulp.task('build', ['clean'], function () {
