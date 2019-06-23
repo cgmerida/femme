@@ -1,0 +1,95 @@
+@import 'variables';
+@import 'spec/index';
+@import 'vendor/index';
+
+
+.full-height {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.top-right {
+    right: 30px;
+    top: 30px;
+}
+
+.links {
+    a {
+        padding: 0 25px;
+        font-size: 1.3em;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.bottom-left {
+    left: 50px;
+    bottom: 50px;
+}
+
+.logo-img {
+    height: 275px;
+}
+
+@media (max-width: $screen-sm-max) {
+    .logo-img {
+        height: 200px;
+    }
+
+    .top-right {
+        right: 1px;
+        top: 15px;
+    }
+
+    .bottom-left {
+        left: 25px;
+        bottom: 25px;
+    }
+}
+
+.section~.section {
+    padding-top: 16vh;
+}
+
+.section {
+    .container {
+        .row {
+            @include respond-to('md') {
+                margin-top: 4em;
+            }
+
+            div {
+
+                @include respond-to ('sm') {
+                    margin-top: 0;
+                }
+
+                p.mt-sm-2 {
+                    width: 100%;
+
+                    @include respond-to('lg') {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.img-container {
+    height: 45vh;
+
+    .bg-flores {
+        height: 100%;
+        background: darken($primary-color, 20);
+        background-image: url("/img/flores.jpg");
+        background-position: 0 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

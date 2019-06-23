@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'spec/index';
+@import 'vendor/index';
+
+body {
+    padding-top: 16vh;
+}
+
+input {
+    background-color: #cccccc;
+}
+[class*=fa-star] {
+    color: #FFD700;
+}
+
+.position-relative.bottom {
+    bottom: 5%;
+}
+
+.product-img {
+    height: 35vh;
+}
+
+// .sticky-top {
+//     position: fixed;
+// }

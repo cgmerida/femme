@@ -1,0 +1,67 @@
+// Body
+$body-bg: #f0f5f5;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Mono:400,700&display=swap');
+
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Roboto Mono', monospace;
+$font-size-base: 0.9rem;
+$lg-text-color: #636b6f;
+$dark-text-color: #4c4d4f;
+
+// Custom Colors
+$primary-color: #eda1ad;
+$secondary-color: #336666;
+$lg-blue-color: #669999;
+$red-color: #FF6961;
+$green-color: #77DD77;
+
+// Buttons
+$btn-default-color: $lg-text-color;
+
+
+// BREAKPOINTS
+// Defining values
+$screen-sm-min: 600px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 768px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 992px;
+$screen-md-max: ($screen-lg-min - 1);
+$screen-xl-min: 1200px;
+$screen-lg-max: ($screen-xl-min - 1);
+
+@mixin respond-to($breakpoint) {
+    
+    @if $breakpoint=="xs" {
+        @media (max-width: $screen-xs-max) {
+            @content;
+        }
+    }
+    
+    @else if $breakpoint=="sm" {
+        @media (min-width: $screen-sm-min) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="md" {
+         @media (min-width: $screen-md-min) {
+             @content;
+         }
+     }
+
+
+    @else if $breakpoint=="lg" {
+        @media (min-width: $screen-lg-min) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=="xl" {
+        @media (min-width: $screen-xl-min) {
+            @content;
+        }
+    }
+}

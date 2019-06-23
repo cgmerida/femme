@@ -1,0 +1,96 @@
+html,
+html a,
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: $font-secondary;
+    font-size: 14px;
+    color: $dark-text-color;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+
+    a {
+        font-family: $font-primary;
+    }
+
+    small {
+        font-weight: 300;
+        color: lighten($dark-text-color, 5%);
+    }
+}
+
+p {
+    font-size: 1.5em;
+    font-family: $font-primary;
+    line-height: 1.4;
+}
+
+.lead {
+    line-height: 1;
+    font-size: 3em;
+    font-family: $font-primary;
+}
+
+.strong {
+    text-transform: uppercase;
+    color: $primary-color;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+a {
+    color: $lg-text-color;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: darken($lg-text-color, 10%);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.text-gray {
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: $dark-text-color !important;
+        }
+    }
+}
+
+:focus {
+    outline: none;
+}
+
+hr {
+    border-top: 1px solid $border-color;
+}
+
+footer.footer {
+    color: white;
+
+    * {
+        color: white;
+    }
+}

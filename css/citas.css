@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Mono:400,700&display=swap");
+.bg-gradient {
+  background: #eda1ad;
+  background: linear-gradient(90deg, #ec9da9 0%, #eda1ad 48%, #eea5b1 100%); }
+
+.bg-img {
+  background-image: url("/img/trans-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media (max-width: 955px) {
+    .bg-img {
+      background-size: cover; } }
+
+.bg {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-primary {
+  background-color: #eda1ad !important; }
+
+.bg-secondary {
+  background-color: #336666 !important; }
+
+.bg-lg-blue {
+  background-color: #669999 !important; }
+
+.bg-red {
+  background-color: #FF6961 !important; }
+
+.bg-green {
+  background-color: #77DD77 !important; }
+
+.text-primary {
+  color: #eda1ad !important; }
+
+.text-secondary {
+  color: #336666 !important; }
+
+.text-lg-blue {
+  color: #669999 !important; }
+
+.text-red {
+  color: #FF6961 !important; }
+
+.text-green {
+  color: #77DD77 !important; }
+
+.text-sm {
+  font-size: 0.8em; }
+
+.text-md {
+  font-size: 1em; }
+
+.text-lg {
+  font-size: 1.2em; }
+
+.text-xl {
+  font-size: 1.6em; }
+
+html,
+html a,
+body {
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  transition: all 0.3s ease-in-out; }
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  color: #4c4d4f;
+  overflow-x: hidden; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: 1.5; }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    font-family: "Raleway", sans-serif; }
+  h1 small,
+  h2 small,
+  h3 small,
+  h4 small,
+  h5 small,
+  h6 small {
+    font-weight: 300;
+    color: #595a5c; }
+
+p {
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4; }
+
+.lead {
+  line-height: 1;
+  font-size: 3em;
+  font-family: "Raleway", sans-serif; }
+
+.strong {
+  text-transform: uppercase;
+  color: #eda1ad; }
+
+ul {
+  margin-bottom: 0; }
+
+a {
+  color: #636b6f; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #4b5154; }
+  a:focus {
+    outline: none; }
+  a.text-gray:hover, a.text-gray:focus, a.text-gray.active {
+    color: #4c4d4f !important; }
+
+:focus {
+  outline: none; }
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.065); }
+
+footer.footer {
+  color: white; }
+  footer.footer * {
+    color: white; }
+
+nav.navbar {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  nav.navbar a img {
+    width: 70px; }
+  nav.navbar .navbar-collapse .navbar-nav .nav-link {
+    padding: 0 25px;
+    font-size: 1.3em;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; }
+    @media (max-width: 768px) {
+      nav.navbar .navbar-collapse .navbar-nav .nav-link {
+        padding: 0; } }
+    nav.navbar .navbar-collapse .navbar-nav .nav-link:hover, nav.navbar .navbar-collapse .navbar-nav .nav-link:focus {
+      text-decoration: none;
+      color: #dd4b62; }
+    nav.navbar .navbar-collapse .navbar-nav .nav-link:focus {
+      outline: none; }
+
+.card-icon {
+  font-size: 3em; }
+
+.btn-secondary {
+  background-color: #336666;
+  border: rgba(0, 0, 0, 0.065); }
+  .btn-secondary:hover {
+    background-color: #3c7777; }
+
+.sticky-offset {
+  top: 18vh; }
+
+body {
+  padding-top: 16vh; }
+
+.checkbox-xl .custom-control-label::before,
+.checkbox-xl .custom-control-label::after {
+  top: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50% !important; }
+
+.checkbox-xl .custom-control-label {
+  padding-top: 0;
+  padding-left: 2.3rem; }
+  .checkbox-xl .custom-control-label p {
+    margin-bottom: 0; }
+
+.products-container {
+  height: 65vh;
+  overflow-x: auto; }
+  .products-container .row {
+    padding: 0;
+    margin: 0; }
+
+.card.top {
+  position: relative;
+  margin: -7em auto 24px; }

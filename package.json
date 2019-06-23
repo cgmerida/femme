@@ -1,0 +1,43 @@
+{
+  "name": "femme",
+  "version": "1.0.0",
+  "description": "Femme Naturelle Web Page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgmerida/femme.git"
+  },
+  "author": "Gerardo Mérida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgmerida/femme/issues"
+  },
+  "homepage": "https://github.com/cgmerida/femme#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin-fix": "^5.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.29",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-social": "^5.1.1",
+    "jquery": "^3.4.1",
+    "jquery-debounce-throttle": "^1.0.0",
+    "popper": "^1.0.1",
+    "popper.js": "^1.15.0"
+  }
+}
