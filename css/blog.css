@@ -3,15 +3,6 @@
   background: #eda1ad;
   background: linear-gradient(90deg, #ec9da9 0%, #eda1ad 48%, #eea5b1 100%); }
 
-.bg-img {
-  background-image: url("/img/trans-bg.png");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: contain; }
-  @media (max-width: 955px) {
-    .bg-img {
-      background-size: cover; } }
-
 .bg {
   background-position: center top;
   background-repeat: no-repeat;
