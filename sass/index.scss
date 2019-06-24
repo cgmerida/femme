@@ -2,6 +2,17 @@
 @import 'spec/index';
 @import 'vendor/index';
 
+.bg-img {
+    background-image: url('../img/trans-bg.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width : 955px) {
+        background-size: cover;
+    }
+}
+
 
 .full-height {
     position: relative;
@@ -87,7 +98,7 @@
     .bg-flores {
         height: 100%;
         background: darken($primary-color, 20);
-        background-image: url("/img/flores.jpg");
+        background-image: url("../img/flores.jpg");
         background-position: 0 25%;
         background-repeat: no-repeat;
         background-size: cover;

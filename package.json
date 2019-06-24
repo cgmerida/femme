@@ -29,6 +29,7 @@
     "gulp-rev": "^9.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^1.0.4",
     "gulp-usemin": "^0.3.29",
     "node-sass": "^4.12.0"
   },
